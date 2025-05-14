@@ -6,12 +6,14 @@
     <title>Adya Creations - Empowering Businesses Through Innovation</title>
     <script src="https://cdn.tailwindcss.com/3.4.16"></script>
     <script>tailwind.config={theme:{extend:{colors:{primary:'#3b82f6',secondary:'#10b981'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/three/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r159/three.min.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/three@0.159.0/examples/jsm/loaders/GLTFLoader.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
     <style>
         :where([class^="ri-"])::before { content: "\f3c2"; }
@@ -331,9 +333,9 @@
                     <a href="#home" class="nav-link text-gray-700 hover:text-primary transition-colors duration-300 active">Home</a>
                     <a href="#about" class="nav-link text-gray-700 hover:text-primary transition-colors duration-300">About Us</a>
                     <a href="#events" class="nav-link text-gray-700 hover:text-primary transition-colors duration-300">Social Events</a>
-                    <a href="#speeches" class="nav-link text-gray-700 hover:text-primary transition-colors duration-300">Motivational Speeches</a>
+                    
                     <a href="#seminars" class="nav-link text-gray-700 hover:text-primary transition-colors duration-300">Guest Seminars</a>
-                    <a href="#business-fest" class="nav-link text-gray-700 hover:text-primary transition-colors duration-300">Small Business Fest</a>
+                    
                     <a href="#gallery" class="nav-link text-gray-700 hover:text-primary transition-colors duration-300">Gallery</a>
                     <a href="#contact" class="ml-4 px-4 py-2 bg-primary text-white !rounded-button whitespace-nowrap hover:bg-blue-600 transition-colors duration-300">Contact Us</a>
                 </div>
@@ -362,23 +364,22 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero-parallax relative min-h-screen flex items-center pt-16" style="background-image: url('https://readdy.ai/api/search-image?query=A%20modern%20corporate%20setting%20with%20abstract%203D%20geometric%20shapes%20floating%20in%20a%20light%20blue%20gradient%20background.%20The%20left%20side%20has%20a%20clean%2C%20minimalist%20design%20with%20ample%20space%20for%20text%2C%20while%20the%20right%20side%20features%20a%20futuristic%20business%20concept%20with%20interconnected%20nodes%20representing%20innovation%20and%20technology.%20The%20transition%20between%20the%20empty%20left%20side%20and%20the%20detailed%20right%20side%20is%20seamless%20and%20natural.&width=1920&height=1080&seq=hero1&orientation=landscape'); background-size: cover; background-position: center;">
-        <div class="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-white/20"></div>
+    <section id="home" class="relative min-h-screen flex items-center pt-16" style="background-color: black; overflow: hidden;">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                <div class="parallax-layer layer-3">
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4">WE MAKE YOUR MOMENTS MEMORABLE</h1>
-                    <p class="text-lg text-gray-700 mb-8 max-w-xl">Adya Creations brings events to life with expert management, creative exhibition solutions, and seamless conference setups — all backed by high-quality infrastructure and a commitment to making every moment memorable.</p>
-                    <div class="flex flex-wrap gap-4">
-                        <a href="#about" class="px-6 py-3 bg-primary text-white !rounded-button whitespace-nowrap hover:bg-blue-600 transition-colors duration-300 shadow-lg">Learn More</a>
-                        <a href="#contact" class="px-6 py-3 bg-white text-primary border border-primary !rounded-button whitespace-nowrap hover:bg-gray-50 transition-colors duration-300 shadow-lg">Contact Us</a>
-                    </div>
+            <div class="flex justify-between items-center h-full">
+                <!-- Left side (content) -->
+                <div class="flex-1 lg:flex-2 flex flex-col justify-center items-center gap-5 text-center z-10">
+                    <h1 class="text-5xl md:text-6xl font-bold text-white mb-2" style="font-family: 'Bebas Neue', sans-serif; text-transform: uppercase; letter-spacing: 2px;">Event. Exhibition. Conference.</h1>
+                    <h2 class="text-2xl md:text-3xl font-bold text-yellow-500 mb-4" style="font-family: 'Bebas Neue', sans-serif; text-transform: uppercase; letter-spacing: 1px;">Aadya Creations</h2>
+                    <p class="text-lg text-gray-300 mb-6 max-w-xl">Crafting unforgettable experiences through events, exhibitions, and bespoke brand solutions.</p>
+                    <button class="px-6 py-3 text-yellow-500 border-2 border-yellow-500 rounded-md hover:bg-yellow-500 hover:text-white transition-all duration-300" style="text-transform: uppercase; letter-spacing: 1px;">Learn More</button>
                 </div>
-            </div>
-        </div>
-        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 scroll-down">
-            <div class="w-10 h-10 flex items-center justify-center rounded-full bg-white/80 shadow-lg">
-                <i class="ri-arrow-down-line ri-lg text-primary"></i>
+                
+                <!-- Right side (image) -->
+                <div class="block flex-1 lg:flex-3 relative w-full h-screen z-0">
+                    <img src="images/hero.jpeg" alt="3D model" class="absolute top-0 right-0 w-full h-full object-cover">
+                    <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-black to-transparent"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -387,7 +388,7 @@
     <section id="about" class="py-20 bg-gray-50">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About Aadya Creat</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About Aadya Creations</h2>
                 <p class="text-lg text-gray-600 max-w-3xl mx-auto">Discover our journey, mission, and the values that drive our commitment to excellence.</p>
             </div>
             
@@ -639,165 +640,6 @@
             <canvas id="threejs-canvas" class="w-full h-full"></canvas>
         </div>
     </div>
-    </section>
-
-    <!-- Motivational Speeches Section -->
-    <section id="speeches" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Motivational Speeches</h2>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Inspiring talks from thought leaders who challenge conventional thinking and ignite transformation.</p>
-            </div>
-            
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-                <div>
-                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">Featured Speaker</h3>
-                    <div class="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100">
-                        <div class="relative h-80">
-                            <img src="https://readdy.ai/api/search-image?query=A%20professional%20female%20keynote%20speaker%20on%20stage%20at%20a%20business%20conference%2C%20dressed%20in%20business%20attire%2C%20gesturing%20confidently%20while%20presenting%20to%20a%20large%20audience.%20The%20stage%20has%20professional%20lighting%2C%20large%20presentation%20screens%2C%20and%20a%20modern%20podium.%20The%20speaker%20appears%20engaging%20and%20authoritative.&width=800&height=500&seq=speaker1&orientation=landscape" alt="Dr. Sophia Richardson" class="w-full h-full object-cover object-top">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
-                                <div class="p-6 text-white">
-                                    <h4 class="text-2xl font-bold mb-1">Dr. Sophia Richardson</h4>
-                                    <p class="text-lg mb-3">CEO, Future Innovations Institute</p>
-                                    <div class="flex items-center">
-                                        <div class="w-8 h-8 flex items-center justify-center rounded-full bg-white/20 mr-3">
-                                            <i class="ri-play-fill ri-lg text-white"></i>
-                                        </div>
-                                        <span>Watch Latest Talk</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="p-6">
-                            <h5 class="text-xl font-semibold text-gray-900 mb-3">"Reimagining Business in the Age of AI"</h5>
-                            <p class="text-gray-700 mb-4">Dr. Richardson explores how artificial intelligence is fundamentally changing business models and what leaders need to do to stay ahead of the curve.</p>
-                            <div class="flex items-center text-sm text-gray-600 mb-4">
-                                <i class="ri-time-line ri-lg mr-2"></i>
-                                <span>45 minutes</span>
-                            </div>
-                            <a href="#" class="inline-flex items-center text-primary hover:underline">
-                                <span>View Full Profile</span>
-                                <i class="ri-arrow-right-line ri-lg ml-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div>
-                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">Testimonials</h3>
-                    <div class="space-y-6">
-                        <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-                            <div class="flex items-start mb-4">
-                                <div class="text-4xl text-primary mr-4">
-                                    <i class="ri-double-quotes-l"></i>
-                                </div>
-                                <p class="text-gray-700 italic">Dr. Richardson's speech on AI innovation was truly eye-opening. Her insights have completely transformed how our organization approaches digital strategy. We've implemented several of her recommendations with remarkable results.</p>
-                            </div>
-                            <div class="flex items-center">
-                                <img src="https://readdy.ai/api/search-image?query=Professional%20headshot%20of%20a%20middle-aged%20businessman%20with%20short%20gray%20hair%20and%20glasses%20wearing%20a%20navy%20suit%20with%20white%20shirt%2C%20neutral%20background%2C%20looking%20confidently%20at%20camera%2C%20well-groomed%2C%20executive%20portrait%20style.&width=100&height=100&seq=test1&orientation=squarish" alt="James Wilson" class="w-12 h-12 rounded-full object-cover mr-4">
-                                <div>
-                                    <h5 class="font-semibold text-gray-900">James Wilson</h5>
-                                    <p class="text-sm text-gray-600">CTO, Global Tech Solutions</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-                            <div class="flex items-start mb-4">
-                                <div class="text-4xl text-primary mr-4">
-                                    <i class="ri-double-quotes-l"></i>
-                                </div>
-                                <p class="text-gray-700 italic">The motivational speech delivered at your Business Innovation Summit was exactly what our team needed. The practical frameworks for fostering creativity while maintaining operational excellence have been invaluable to our growth strategy.</p>
-                            </div>
-                            <div class="flex items-center">
-                                <img src="https://readdy.ai/api/search-image?query=Professional%20headshot%20of%20a%20young%20Asian%20businesswoman%20with%20shoulder-length%20black%20hair%20wearing%20a%20modern%20blazer%2C%20neutral%20background%2C%20confident%20smile%2C%20looking%20directly%20at%20camera%2C%20corporate%20portrait%20style.&width=100&height=100&seq=test2&orientation=squarish" alt="Michelle Chang" class="w-12 h-12 rounded-full object-cover mr-4">
-                                <div>
-                                    <h5 class="font-semibold text-gray-900">Michelle Chang</h5>
-                                    <p class="text-sm text-gray-600">CEO, Innovative Startups Inc.</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-                            <div class="flex items-start mb-4">
-                                <div class="text-4xl text-primary mr-4">
-                                    <i class="ri-double-quotes-l"></i>
-                                </div>
-                                <p class="text-gray-700 italic">Attending the leadership seminar series has been transformative for our executive team. The combination of theoretical frameworks and practical applications provided us with actionable insights we could implement immediately.</p>
-                            </div>
-                            <div class="flex items-center">
-                                <img src="https://readdy.ai/api/search-image?query=Professional%20headshot%20of%20an%20African%20American%20businessman%20in%20his%2040s%20wearing%20a%20light%20gray%20suit%20with%20blue%20tie%2C%20neutral%20background%2C%20confident%20expression%2C%20well-groomed%20with%20short%20hair%2C%20executive%20portrait%20style.&width=100&height=100&seq=test3&orientation=squarish" alt="Marcus Johnson" class="w-12 h-12 rounded-full object-cover mr-4">
-                                <div>
-                                    <h5 class="font-semibold text-gray-900">Marcus Johnson</h5>
-                                    <p class="text-sm text-gray-600">Managing Director, Future Finance</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <h3 class="text-2xl font-semibold text-gray-900 mb-8 text-center">Recent Talks</h3>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100">
-                    <div class="relative h-48">
-                        <img src="https://readdy.ai/api/search-image?query=A%20male%20business%20speaker%20presenting%20on%20stage%20at%20a%20TED-style%20event%20with%20a%20red%20circular%20carpet.%20He%20is%20wearing%20business%20casual%20attire%2C%20gesturing%20expressively%20while%20speaking%20to%20an%20audience.%20Large%20screens%20display%20his%20presentation%20in%20a%20modern%20auditorium%20setting%20with%20professional%20stage%20lighting.&width=600&height=400&seq=talk1&orientation=landscape" alt="The Future of Work" class="w-full h-full object-cover object-top">
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <div class="w-16 h-16 flex items-center justify-center rounded-full bg-primary/80 text-white hover:bg-primary transition-colors duration-300 cursor-pointer">
-                                <i class="ri-play-fill ri-2x"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-5">
-                        <h4 class="text-lg font-semibold text-gray-900 mb-2">"The Future of Work"</h4>
-                        <p class="text-sm text-gray-700 mb-3">Alexander Bennett explores how remote work, AI, and changing demographics are reshaping workplace dynamics.</p>
-                        <div class="flex items-center text-sm text-gray-600">
-                            <i class="ri-time-line ri-lg mr-2"></i>
-                            <span>32 minutes</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100">
-                    <div class="relative h-48">
-                        <img src="https://readdy.ai/api/search-image?query=A%20female%20innovation%20expert%20speaking%20at%20a%20business%20conference%2C%20gesturing%20with%20hands%20while%20explaining%20concepts.%20She%20is%20wearing%20professional%20business%20attire%20on%20a%20well-lit%20stage%20with%20digital%20displays%20showing%20innovation%20concepts.%20The%20audience%20is%20visible%20in%20the%20foreground%2C%20attentively%20listening%20in%20a%20modern%20conference%20venue.&width=600&height=400&seq=talk2&orientation=landscape" alt="Innovation Mindset" class="w-full h-full object-cover object-top">
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <div class="w-16 h-16 flex items-center justify-center rounded-full bg-primary/80 text-white hover:bg-primary transition-colors duration-300 cursor-pointer">
-                                <i class="ri-play-fill ri-2x"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-5">
-                        <h4 class="text-lg font-semibold text-gray-900 mb-2">"Innovation Mindset"</h4>
-                        <p class="text-sm text-gray-700 mb-3">Dr. Olivia Martinez shares practical strategies for cultivating innovation within established organizations.</p>
-                        <div class="flex items-center text-sm text-gray-600">
-                            <i class="ri-time-line ri-lg mr-2"></i>
-                            <span>28 minutes</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100">
-                    <div class="relative h-48">
-                        <img src="https://readdy.ai/api/search-image?query=A%20diverse%20panel%20discussion%20at%20a%20business%20conference%20with%20four%20speakers%20seated%20on%20stage%20with%20microphones.%20The%20panelists%20include%20men%20and%20women%20of%20different%20ethnicities%20in%20professional%20attire.%20They%20are%20engaged%20in%20conversation%20with%20a%20moderator%2C%20with%20presentation%20screens%20visible%20behind%20them%20in%20a%20professional%20conference%20setting.&width=600&height=400&seq=talk3&orientation=landscape" alt="Leadership Panel" class="w-full h-full object-cover object-top">
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <div class="w-16 h-16 flex items-center justify-center rounded-full bg-primary/80 text-white hover:bg-primary transition-colors duration-300 cursor-pointer">
-                                <i class="ri-play-fill ri-2x"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-5">
-                        <h4 class="text-lg font-semibold text-gray-900 mb-2">"Leadership Panel: Navigating Change"</h4>
-                        <p class="text-sm text-gray-700 mb-3">Industry leaders discuss strategies for effective leadership during periods of significant organizational change.</p>
-                        <div class="flex items-center text-sm text-gray-600">
-                            <i class="ri-time-line ri-lg mr-2"></i>
-                            <span>45 minutes</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
 
     <!-- Guest Seminars Section -->
@@ -1065,226 +907,7 @@
         </div>
     </section>
 
-    <!-- Small Business Fest Section -->
-    <section id="business-fest" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Small Business Fest</h2>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Celebrating entrepreneurship and connecting small business owners with resources, partners, and customers.</p>
-            </div>
-            
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-                <div>
-                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">About the Festival</h3>
-                    <p class="text-gray-700 mb-6">The Small Business Fest is Aadya Creation's flagship event dedicated to supporting and celebrating entrepreneurship. Each year, we bring together hundreds of small business owners, industry experts, investors, and service providers for two days of learning, networking, and growth.</p>
-                    <p class="text-gray-700 mb-8">From workshops and panel discussions to pitch competitions and networking sessions, the festival offers something for businesses at every stage—from startups to established enterprises looking to scale.</p>
-                    
-                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 mb-8">
-                        <h4 class="text-xl font-semibold text-primary mb-4">2025 Festival Highlights</h4>
-                        <ul class="space-y-3">
-                            <li class="flex items-start">
-                                <i class="ri-check-line ri-lg text-primary mt-1 mr-3"></i>
-                                <span class="text-gray-700">50+ expert-led workshops and sessions</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="ri-check-line ri-lg text-primary mt-1 mr-3"></i>
-                                <span class="text-gray-700">$100,000 pitch competition with investor panel</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="ri-check-line ri-lg text-primary mt-1 mr-3"></i>
-                                <span class="text-gray-700">1-on-1 consulting sessions with industry experts</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="ri-check-line ri-lg text-primary mt-1 mr-3"></i>
-                                <span class="text-gray-700">Small business marketplace with 100+ vendors</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="ri-check-line ri-lg text-primary mt-1 mr-3"></i>
-                                <span class="text-gray-700">Networking events and business matchmaking</span>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="#" class="px-6 py-3 bg-primary text-white !rounded-button whitespace-nowrap hover:bg-blue-600 transition-colors duration-300 text-center">Register for 2025 Festival</a>
-                        <a href="#" class="px-6 py-3 bg-white text-primary border border-primary !rounded-button whitespace-nowrap hover:bg-gray-50 transition-colors duration-300 text-center">Become a Sponsor</a>
-                    </div>
-                </div>
-                
-                <div>
-                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">Success Stories</h3>
-                    
-                    <div class="space-y-6">
-                        <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-                            <div class="flex items-center mb-4">
-                                <img src="https://readdy.ai/api/search-image?query=A%20modern%2C%20minimalist%20logo%20for%20a%20tech%20startup%20with%20abstract%20geometric%20shapes%20in%20blue%20and%20green%20colors%20on%20a%20white%20background%2C%20professional%20and%20clean%20design%20suitable%20for%20a%20technology%20company.&width=80&height=80&seq=logo1&orientation=squarish" alt="EcoTech Solutions" class="w-16 h-16 object-contain mr-4">
-                                <div>
-                                    <h4 class="text-lg font-semibold text-gray-900">EcoTech Solutions</h4>
-                                    <p class="text-sm text-gray-600">Sustainable Technology</p>
-                                </div>
-                            </div>
-                            <p class="text-gray-700 mb-4">"Participating in the Small Business Fest was a turning point for our company. The connections we made led to our first major contract, and the mentorship we received helped us refine our business model. Within a year of the festival, we secured $2M in funding and doubled our team size."</p>
-                            <div class="flex items-center">
-                                <img src="https://readdy.ai/api/search-image?query=Professional%20headshot%20of%20a%20young%20female%20entrepreneur%20with%20curly%20hair%2C%20wearing%20a%20smart%20casual%20outfit%2C%20neutral%20background%2C%20confident%20smile%2C%20startup%20founder%20portrait%20style.&width=50&height=50&seq=founder1&orientation=squarish" alt="Rebecca Chen" class="w-10 h-10 rounded-full object-cover mr-3">
-                                <div>
-                                    <h5 class="font-semibold text-gray-900">Rebecca Chen</h5>
-                                    <p class="text-xs text-gray-600">Founder & CEO</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-                            <div class="flex items-center mb-4">
-                                <img src="https://readdy.ai/api/search-image?query=A%20modern%2C%20elegant%20logo%20for%20an%20artisanal%20food%20company%20with%20a%20stylized%20wheat%20symbol%20in%20warm%20earth%20tones%20on%20a%20white%20background%2C%20clean%20and%20professional%20design%20suitable%20for%20a%20gourmet%20brand.&width=80&height=80&seq=logo2&orientation=squarish" alt="Artisan Provisions" class="w-16 h-16 object-contain mr-4">
-                                <div>
-                                    <h4 class="text-lg font-semibold text-gray-900">Artisan Provisions</h4>
-                                    <p class="text-sm text-gray-600">Specialty Food Products</p>
-                                </div>
-                            </div>
-                            <p class="text-gray-700 mb-4">"The Small Business Fest gave us the platform to showcase our products to a wider audience. The feedback we received helped us refine our offerings, and the retail connections we made led to placement in 50+ specialty stores across the country. Our revenue has grown 300% since our first festival."</p>
-                            <div class="flex items-center">
-                                <img src="https://readdy.ai/api/search-image?query=Professional%20headshot%20of%20a%20middle-aged%20male%20entrepreneur%20with%20beard%2C%20wearing%20a%20casual%20button-up%20shirt%2C%20neutral%20background%2C%20friendly%20expression%2C%20small%20business%20owner%20portrait%20style.&width=50&height=50&seq=founder2&orientation=squarish" alt="James Wilson" class="w-10 h-10 rounded-full object-cover mr-3">
-                                <div>
-                                    <h5 class="font-semibold text-gray-900">James Wilson</h5>
-                                    <p class="text-xs text-gray-600">Co-founder</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="mb-16">
-                <h3 class="text-2xl font-semibold text-gray-900 mb-8 text-center">Festival Schedule</h3>
-                
-                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div>
-                            <h4 class="text-xl font-semibold text-primary mb-6">Day 1: September 15, 2025</h4>
-                            
-                            <div class="space-y-6">
-                                <div class="border-l-4 border-primary pl-4">
-                                    <p class="text-sm text-gray-500 mb-1">9:00 AM - 10:00 AM</p>
-                                    <h5 class="font-semibold text-gray-900 mb-1">Opening Keynote: "The Future of Small Business"</h5>
-                                    <p class="text-sm text-gray-700">Main Stage</p>
-                                </div>
-                                
-                                <div class="border-l-4 border-gray-200 pl-4">
-                                    <p class="text-sm text-gray-500 mb-1">10:30 AM - 12:00 PM</p>
-                                    <h5 class="font-semibold text-gray-900 mb-1">Workshop: "Funding Strategies for Growth"</h5>
-                                    <p class="text-sm text-gray-700">Workshop Room A</p>
-                                </div>
-                                
-                                <div class="border-l-4 border-gray-200 pl-4">
-                                    <p class="text-sm text-gray-500 mb-1">12:00 PM - 1:30 PM</p>
-                                    <h5 class="font-semibold text-gray-900 mb-1">Networking Lunch</h5>
-                                    <p class="text-sm text-gray-700">Grand Hall</p>
-                                </div>
-                                
-                                <div class="border-l-4 border-gray-200 pl-4">
-                                    <p class="text-sm text-gray-500 mb-1">2:00 PM - 3:30 PM</p>
-                                    <h5 class="font-semibold text-gray-900 mb-1">Panel: "Scaling Your Business: Lessons Learned"</h5>
-                                    <p class="text-sm text-gray-700">Main Stage</p>
-                                </div>
-                                
-                                <div class="border-l-4 border-gray-200 pl-4">
-                                    <p class="text-sm text-gray-500 mb-1">4:00 PM - 5:30 PM</p>
-                                    <h5 class="font-semibold text-gray-900 mb-1">Workshop: "Digital Marketing on a Budget"</h5>
-                                    <p class="text-sm text-gray-700">Workshop Room B</p>
-                                </div>
-                                
-                                <div class="border-l-4 border-gray-200 pl-4">
-                                    <p class="text-sm text-gray-500 mb-1">6:00 PM - 8:00 PM</p>
-                                    <h5 class="font-semibold text-gray-900 mb-1">Welcome Reception & Networking</h5>
-                                    <p class="text-sm text-gray-700">Rooftop Terrace</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div>
-                            <h4 class="text-xl font-semibold text-primary mb-6">Day 2: September 16, 2025</h4>
-                            
-                            <div class="space-y-6">
-                                <div class="border-l-4 border-primary pl-4">
-                                    <p class="text-sm text-gray-500 mb-1">9:00 AM - 10:00 AM</p>
-                                    <h5 class="font-semibold text-gray-900 mb-1">Keynote: "Innovation for Small Business"</h5>
-                                    <p class="text-sm text-gray-700">Main Stage</p>
-                                </div>
-                                
-                                <div class="border-l-4 border-gray-200 pl-4">
-                                    <p class="text-sm text-gray-500 mb-1">10:30 AM - 12:00 PM</p>
-                                    <h5 class="font-semibold text-gray-900 mb-1">Pitch Competition: Preliminary Round</h5>
-                                    <p class="text-sm text-gray-700">Investor Hall</p>
-                                </div>
-                                
-                                <div class="border-l-4 border-gray-200 pl-4">
-                                    <p class="text-sm text-gray-500 mb-1">12:00 PM - 1:30 PM</p>
-                                    <h5 class="font-semibold text-gray-900 mb-1">Industry Roundtables Lunch</h5>
-                                    <p class="text-sm text-gray-700">Grand Hall</p>
-                                </div>
-                                
-                                <div class="border-l-4 border-gray-200 pl-4">
-                                    <p class="text-sm text-gray-500 mb-1">2:00 PM - 3:30 PM</p>
-                                    <h5 class="font-semibold text-gray-900 mb-1">Workshop: "Building a Resilient Supply Chain"</h5>
-                                    <p class="text-sm text-gray-700">Workshop Room A</p>
-                                </div>
-                                
-                                <div class="border-l-4 border-gray-200 pl-4">
-                                    <p class="text-sm text-gray-500 mb-1">4:00 PM - 5:30 PM</p>
-                                    <h5 class="font-semibold text-gray-900 mb-1">Pitch Competition: Final Round</h5>
-                                    <p class="text-sm text-gray-700">Main Stage</p>
-                                </div>
-                                
-                                <div class="border-l-4 border-gray-200 pl-4">
-                                    <p class="text-sm text-gray-500 mb-1">6:00 PM - 9:00 PM</p>
-                                    <h5 class="font-semibold text-gray-900 mb-1">Awards Dinner & Celebration</h5>
-                                    <p class="text-sm text-gray-700">Grand Ballroom</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div>
-                <h3 class="text-2xl font-semibold text-gray-900 mb-8 text-center">Our Partners & Sponsors</h3>
-                
-                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 items-center">
-                    <div class="p-4 flex items-center justify-center">
-                        <div class="w-24 h-24 flex items-center justify-center">
-                            <i class="ri-bank-fill ri-3x text-gray-400"></i>
-                        </div>
-                    </div>
-                    <div class="p-4 flex items-center justify-center">
-                        <div class="w-24 h-24 flex items-center justify-center">
-                            <i class="ri-google-fill ri-3x text-gray-400"></i>
-                        </div>
-                    </div>
-                    <div class="p-4 flex items-center justify-center">
-                        <div class="w-24 h-24 flex items-center justify-center">
-                            <i class="ri-microsoft-fill ri-3x text-gray-400"></i>
-                        </div>
-                    </div>
-                    <div class="p-4 flex items-center justify-center">
-                        <div class="w-24 h-24 flex items-center justify-center">
-                            <i class="ri-amazon-fill ri-3x text-gray-400"></i>
-                        </div>
-                    </div>
-                    <div class="p-4 flex items-center justify-center">
-                        <div class="w-24 h-24 flex items-center justify-center">
-                            <i class="ri-linkedin-box-fill ri-3x text-gray-400"></i>
-                        </div>
-                    </div>
-                    <div class="p-4 flex items-center justify-center">
-                        <div class="w-24 h-24 flex items-center justify-center">
-                            <i class="ri-paypal-fill ri-3x text-gray-400"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    
     <!-- Gallery Section -->
     <section id="gallery" class="py-20 bg-white">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -1714,24 +1337,35 @@
 
         // Models Array
         const models = [
-            { url: 'gltf/octonorm/octonorm.gltf', position: [-2, 0, 0] },
+            
             { url: 'gltf/hangar/hangar.gltf', position: [0, 0, 0] },
             { url: 'gltf/stalls/stalls.gltf', position: [2, 0, 0] },
             { url: 'gltf/furniture/furniture.gltf', position: [4, 0, 0] },
-            { url: 'path/to/flex-printing.gltf', position: [6, 0, 0] },
+            
         ];
 
         // GLTF Loader
         const loader = new THREE.GLTFLoader();
         const loadedModels = [];
         models.forEach((model, index) => {
-            loader.load(model.url, (gltf) => {
-                const object = gltf.scene;
-                object.position.set(...model.position);
-                object.scale.set(0.5, 0.5, 0.5);
-                scene.add(object);
-                loadedModels.push(object);
-            });
+            loader.load(model.url, 
+                // Success callback
+                (gltf) => {
+                    const object = gltf.scene;
+                    object.position.set(...model.position);
+                    object.scale.set(0.5, 0.5, 0.5);
+                    scene.add(object);
+                    loadedModels.push(object);
+                },
+                // Progress callback
+                (xhr) => {
+                    console.log((xhr.loaded / xhr.total * 100) + '% loaded');
+                },
+                // Error callback
+                (error) => {
+                    console.error('An error happened loading ' + model.url, error);
+                }
+            );
         });
 
         // Camera Position
